@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="轻图是一款免费、安全的在线图片压缩工具。在浏览器中压缩图片，支持 WebP、JPG 和 PNG，原图不会上传至服务器。" />
+    <meta name="theme-color" content="#f7f8f4" />
+    <title>轻图 · 在线图片压缩，轻一点更快一点</title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="轻图首页">
+          <span class="brand-mark" aria-hidden="true">轻</span>
+          <span class="brand-name">轻图<span class="brand-dot">.</span></span>
+        </a>
+        <nav class="nav-links" aria-label="主导航">
+          <a class="nav-link" href="#compressor">图片压缩</a>
+          <span class="privacy-pill"><span class="privacy-dot"></span>100% 本地处理</span>
+        </nav>
+      </header>
+
+      <main id="home">
+        <section class="hero" aria-labelledby="hero-title">
+          <div class="hero-copy">
+            <span class="eyebrow"><span class="sparkle">✳</span> 简单 · 免费 · 更安心</span>
+            <h1 id="hero-title">图片瘦一点，<br /><span>生活快一点。</span></h1>
+            <p class="hero-description">拖进来，轻一点。无需注册，也不需要上传——图片就在你的浏览器里悄悄变小。</p>
+            <a class="hero-cta" href="#compressor">现在开始压缩 <span class="cta-arrow" aria-hidden="true">↗</span></a>
+            <div class="trust-note"><span class="trust-icon" aria-hidden="true">✓</span>图片不离开你的设备，始终由你掌控</div>
+          </div>
+
+          <div class="hero-art" aria-label="一幅描绘日落山景的图片，配有压缩效果示意">
+            <div class="art-orbit orbit-one"></div>
+            <div class="art-orbit orbit-two"></div>
+            <div class="landscape-card">
+              <svg class="landscape" viewBox="0 0 600 440" role="img" aria-label="青绿山峦与橙色日落">
+                <defs>
+                  <linearGradient id="sky" x1="0" y1="0" x2="0.8" y2="1"><stop offset="0" stop-color="#ffd7a0" /><stop offset="0.56" stop-color="#f5a980" /><stop offset="1" stop-color="#c6777b" /></linearGradient>
+                  <linearGradient id="mountainBack" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#98bd98" /><stop offset="1" stop-color="#658e7a" /></linearGradient>
+                  <linearGradient id="mountainFront" x1="0" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#426b59" /><stop offset="1" stop-color="#274b43" /></linearGradient>
+                  <clipPath id="sceneClip"><rect width="600" height="440" rx="26" /></clipPath>
+                </defs>
+                <g clip-path="url(#sceneClip)">
+                  <rect width="600" height="440" fill="url(#sky)" />
+                  <circle cx="425" cy="148" r="64" fill="#fff2c7" opacity="0.92" />
+                  <path d="M0 270 117 125l98 112 123-150 164 191 98-103v265H0z" fill="url(#mountainBack)" />
+                  <path d="m40 270 76-93 61 69-29-8-32 10-22 22zm233-52 65-131 79 137-54-24-27 19-29-18z" fill="#e1dbbb" opacity=".74" />
+                  <path d="M0 307 134 186l126 120 104-97 148 119 88-97v209H0z" fill="url(#mountainFront)" />
+                  <path d="m262 306 102-97 48 38-43-18-28 21-34-15zm129 24 121-2 60-79-58 43-46-9-33 32z" fill="#a2b78c" opacity=".86" />
+                  <path d="M0 352c123-43 193 29 314-4s178-42 286 4v88H0z" fill="#23453f" />
+                  <path d="M69 375c91-29 141 19 228-2" fill="none" stroke="#d9c79e" stroke-width="3" stroke-linecap="round" opacity=".65" />
+                  <circle cx="101" cy="312" r="6" fill="#f2ca91" opacity=".9" /><circle cx="519" cy="281" r="4" fill="#f5d19a" opacity=".82" />
+                </g>
+              </svg>
+              <span class="art-image-label"><span class="image-label-dot"></span> 一个好看的周末</span>
+            </div>
+            <div class="floating-note note-original"><span class="note-caption">原始图片</span><strong>2.8 <small>MB</small></strong></div>
+            <div class="floating-note note-compressed"><span class="note-caption">轻盈之后</span><strong>428 <small>KB</small></strong><span class="saving-badge">↓ 85%</span></div>
+            <div class="art-sparkle sparkle-one" aria-hidden="true">✳</div><div class="art-sparkle sparkle-two" aria-hidden="true">✳</div>
+          </div>
+        </section>
+
+        <section id="compressor" class="studio-section" aria-labelledby="studio-title">
+          <div class="studio-heading">
+            <div><span class="section-eyebrow">你的图片小工作室</span><h2 id="studio-title">好啦，交给轻图就行。</h2></div>
+            <div class="studio-tag"><span class="privacy-dot"></span> 图片不会上传</div>
+          </div>
+          <div class="studio-layout">
+            <div class="files-column">
+              <input id="fileInput" class="visually-hidden" type="file" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" multiple aria-label="选择要压缩的图片" />
+              <div id="dropzone" class="dropzone" role="region" aria-label="图片上传区域">
+                <span class="upload-icon" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 21V5m0 0L9.5 11.5M16 5l6.5 6.5M6 19v6.5A1.5 1.5 0 0 0 7.5 27h17a1.5 1.5 0 0 0 1.5-1.5V19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg></span>
+                <div class="dropzone-copy"><p class="dropzone-title">把图片拖到这里</p><p class="dropzone-caption">或者 <button id="selectButton" class="text-button" type="button">从电脑里选几张</button></p></div>
+                <span class="format-note">JPG、PNG、WebP · 单张最大 20 MB</span>
+              </div>
+              <div class="queue-heading"><h3>图片队列 <span id="queueCount" class="queue-count">0</span></h3><button id="clearButton" class="clear-button" type="button" disabled>清空</button></div>
+              <div id="emptyState" class="empty-state"><span class="empty-icon" aria-hidden="true">✳</span><p>这里还空空的</p><span>添加几张图片，开启轻盈时刻</span></div>
+              <div id="taskList" class="task-list" aria-live="polite"></div>
+              <p id="statusMessage" class="status-message" aria-live="polite" role="status"></p>
+            </div>
+
+            <aside class="settings-card" aria-labelledby="settings-title">
+              <span class="settings-kicker">最后一步</span><h3 id="settings-title">挑一个你喜欢的效果</h3>
+              <label class="field-label" for="formatSelect">输出格式</label>
+              <select id="formatSelect" class="format-select"><option value="image/webp">WebP · 推荐</option><option value="image/jpeg">JPG</option><option value="image/png">PNG · 无损</option></select>
+              <div class="quality-heading"><label class="field-label" for="qualitySlider">压缩质量</label><span id="qualityValue" class="quality-value">80%</span></div>
+              <input id="qualitySlider" class="quality-slider" type="range" min="10" max="100" step="1" value="80" aria-describedby="qualityHint" />
+              <div class="range-labels"><span>体积更小</span><span>画质更好</span></div>
+              <p id="qualityHint" class="quality-hint">品质与大小刚刚好，适合大多数照片。</p>
+              <div class="privacy-note"><span class="privacy-shield" aria-hidden="true">✓</span><p>放心压缩<br /><span>图片仅在本地设备处理，绝不上传。</span></p></div>
+              <button id="compressButton" class="compress-button" type="button" disabled><span>开始压缩</span><span class="button-arrow" aria-hidden="true">↗</span></button>
+              <p class="button-caption">一次最多添加 30 张图片</p>
+            </aside>
+          </div>
+        </section>
+
+        <section class="benefits" aria-label="轻图的优点">
+          <article class="benefit-card"><span class="benefit-icon benefit-green" aria-hidden="true">⌁</span><div><h3>图片留在你身边</h3><p>在浏览器本地处理，隐私始终握在自己手里。</p></div></article>
+          <article class="benefit-card"><span class="benefit-icon benefit-peach" aria-hidden="true">↘</span><div><h3>想压多少就压多少</h3><p>免费使用，没有次数限制，也不需要注册。</p></div></article>
+          <article class="benefit-card"><span class="benefit-icon benefit-lilac" aria-hidden="true">◉</span><div><h3>常用格式都能压</h3><p>WebP、JPG、PNG，按需选择合适的格式。</p></div></article>
+        </section>
+      </main>
+      <footer class="footer"><a class="footer-brand" href="#home"><span>轻图.</span> 轻一点，更自在。</a><span>用一点点技术，让日常轻一点。✳</span></footer>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

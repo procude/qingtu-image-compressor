@@ -24,10 +24,6 @@ npm run preview
 
 支持输出 WebP、JPG 与 PNG。浏览器原生压缩为光栅图像的重新编码；PNG 的质量控制不适用。
 
-## 发布到 GitHub Pages
-
-仓库已附带 GitHub Actions 部署工作流。推送至 GitHub 后，在仓库设置的 **Pages** 中将来源设为 **GitHub Actions**，工作流会自动发布站点。
-
 ## 可选命令
 
 ```bash
